@@ -1,7 +1,7 @@
 {
-  "name": "me-api-project",
+  "name": "trade-api",
   "version": "1.0.0",
-  "description": "Server me-api-project",
+  "description": "Server trade-api",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",

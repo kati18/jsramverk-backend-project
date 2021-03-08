@@ -2,7 +2,7 @@
 
 "use strict";
 
-// const port = 1337; // changed to 8333 in app.js on production server
+// const port = 1337; // changed to 8444 in app.js on production server
 const port = 8444; // is used on production server
 const express = require("express");
 const cors = require('cors');
@@ -43,7 +43,7 @@ app.use("/loggs", routeServerLoggs);
 /**
  * Below code concerns routes and what happens if a
  * route that doesn´t exists gets called, e g
- * http://localhost:1337/none
+ * http://localhost:1337/none alt https://trade-api.ktibe.me/none
  */
 // Add routes for 404 and error handling
 // Catch 404 and forward to error handler
@@ -73,7 +73,7 @@ app.use((err, req, res, next) => {
 /**
  * End of below code concerns routes and what happens if a
  * route that doesn´t exists gets called, e g
- * http://localhost:1337/none alt https://me-api-project.ktibe.me/none'
+ * http://localhost:1337/none alt https://trade-api.ktibe.me/none
  */
 
 

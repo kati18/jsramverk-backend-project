@@ -25,7 +25,7 @@ Run `npm start` for a dev server. Server starts up at `http://localhost:1337/`.
 
 ## Production server
 
-Run `npm run production` for a prod server. Server starts up at `https://me-api-project.ktibe.me/`.
+Run `npm run production` for a prod server. Server starts up at `https://trade-api.ktibe.me/`.
 
 ## Further help and information
 
