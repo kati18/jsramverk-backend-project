@@ -85,7 +85,7 @@ app.use((err, req, res, next) => {
 // });
 
 // Below for being able to export server for testing purposes:
-const server = app.listen(port, () => console.log(`Me API listening on port ${port}!`));
+const server = app.listen(port, () => console.log(`Trade API listening on port ${port}!`));
 // alt.:
 // const server = app.listen(port, () => {
 //     console.log(`Me API listening on port ${port}!`);

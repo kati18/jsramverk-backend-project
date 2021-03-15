@@ -31,7 +31,7 @@ Run `npm run production` for a prod server. Server starts up at `https://trade-a
 
 Available routes in the RESTful API are:
 
-    - GET / - presents start i.e. information about theís fake trading site
+    - GET / - presents start i.e. information about the fake trading site
     - GET /trade - presents a form for trading mushrooms using the authenticated user´s account
     - GET /accounts/:email - presents liquid assets and holdings in the authenticated user´s account
     - GET /loggs/:email - presents transaction loggs in the authenticated user´s account
@@ -46,8 +46,10 @@ Passwords are saved encrypted and user authentication is handled with JSON Web T
 ## GitHub
 
 The course repository for the Trade API is available at [My Github repo Trade API](https://github.com/kati18/jsramverk-backend-project.git)<br>
-A frontend SPA developed in Angular is available at [My GitHub repo](https://github.com/kati18/jsramverk-frontend-project.git)
+A realtime price server is available at [My Github repo Realtime price server](https://github.com/kati18/jsramverk-socket-server-project.git)<br>
+A frontend SPA developed in Angular is available at [My GitHub repo Trade Angular](https://github.com/kati18/jsramverk-frontend-project.git)
 
 ## Implementation
 
-För implementationen av backenden har jag använt mig av samma tekniker och verktyg som i övriga kursmoment d v s en SQLite databas, en Express-server, Node.js, src-filer som kommunicerar med databasen och route-filer som tar emot och svarar på anrop från frontenden i sin tur anropar src-filerna. För kryptering/dekryptering av lösenord och autentisering har jag använt mig av modulen bcrypt och JSON Web Token(JWT). Anledningen till att jag valde alla ovan nämnda tekniker och verktyg är jag är hyfsat bekant med dem och tycker att de har fungerat bra i både tidigare kursmoment och kurser.
+För implementationen av backenden har jag använt mig av samma tekniker och verktyg som i övriga kursmoment d v s en SQLite databas, en Express-server, Node.js, route-filer som tar emot och svarar på anrop från frontenden och anropar src-filerna som i sin tur kommunicerar med databasen. API:t tar, som nämnts ovan, emot formulär-data i fyra olika request bodies. Datan valideras och kontrolleras mot datan i databasen och relevant response genereras. För kryptering/dekryptering av lösenord och autentisering har jag använt mig av modulen bcrypt och JSON Web Token(JWT).
+Anledningen till att jag valde alla ovan nämnda tekniker och verktyg är jag är hyfsat bekant med dem och tycker att de har fungerat bra i både tidigare kursmoment och kurser.
